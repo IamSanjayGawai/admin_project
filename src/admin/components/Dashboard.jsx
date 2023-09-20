@@ -28,11 +28,11 @@ function Dashboard() {
                <div className="row d-flex align-items-center py-3 box-shadow3">  <h5 className="text-light"> Admin Panel</h5></div>
                <div className="row mt-5  px-2 gap-3">
                   <div onClick={() => handleClick('Dashboard')} className="col-12 p-1 fs-5 text-light bx-hover" style={{ cursor: 'pointer' }}>  
-                  <i class="bi bi-house-fill me-2"></i>
+                  <i class="bi bi-pie-chart-fill me-2"></i>
                     Dashboard
                   </div>
                   <div onClick={() => handleClick('Products')} className="col-12 p-1 fs-5 text-light bx-hover" style={{ cursor: 'pointer' }}>
-                  <i class="bi bi-bag-fill me-2"></i>
+                  <i class="bi bi-box fs-5 me-2 "></i>
                      Products
                   </div>
                   <div onClick={() => handleClick('Orders')}  className="col-12 p-1 fs-5 text-light bx-hover" style={{ cursor: 'pointer' }}>
