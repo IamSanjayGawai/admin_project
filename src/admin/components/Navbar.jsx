@@ -1,22 +1,28 @@
 import React from 'react';
+import Myprofile from '../../assets/Sanjay_Gawai.png';
 
 function Navbar() {
   return (
-    <div className="dropdown pb-4 border border-success">
-      <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle" />
-        <span className="d-none d-sm-inline mx-1">loser</span>
-      </a>
-      <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
-        <li><a className="dropdown-item" href="#">New project...</a></li>
-        <li><a className="dropdown-item" href="#">Settings</a></li>
-        <li><a className="dropdown-item" href="#">Profile</a></li>
-        <li>
-          <hr className="dropdown-divider" />
-        </li>
-        <li><a className="dropdown-item" href="#">Sign out</a></li>
-      </ul>
+    <nav class="navbar navbar-light bg-light box-shadow">
+    <div class="container-fluid">
+       <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+       </form>
+
+       {/* Profile dropdown toggler start */}
+       <div class="dropdown nav-item ms-auto">
+          <img src={Myprofile} class="rounded-circle me-1" height="35" alt="" loading="lazy" />
+          <a class="dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#">Profile</a>
+             <a class="dropdown-item" href="#">Setting</a>
+             <a class="dropdown-item" href="#">Logout</a>
+          </div>
+       </div>
+       {/* Profile dropdown toggler end */}
     </div>
+ </nav>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Card from '../../user/components/Card';
+import MyProfile from '../../assets/Sanjay_Gawai.png'
 
 function Home() {
 
@@ -21,7 +22,7 @@ function Home() {
 
                      {/* Profile dropdown toggler start */}
                      <div class="dropdown nav-item ms-auto">
-                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle me-1" height="40" alt="" loading="lazy" />
+                        <img src={MyProfile} class="rounded-circle me-1" height="35" alt="" loading="lazy" />
                         <a class="dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                            <a class="dropdown-item" href="#">Profile</a>
@@ -58,7 +59,6 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                       
                 </div>

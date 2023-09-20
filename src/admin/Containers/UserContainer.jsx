@@ -9,7 +9,7 @@ function UserContainer() {
                         {/* Card */}
                          
 
-                      <h1>Uers</h1>
+                        <h2>Users</h2>
 
 
                      </div>

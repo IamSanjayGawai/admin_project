@@ -5,7 +5,7 @@ function HomeDashboard() {
       <>
          {/* row inside main column */}
          <div className="row mt-4 r" style={{ height: '85vh' }}>
-            <h1>Dashboard</h1>
+            <h2>Dashboard</h2>
             <div className="col " >
                {/* row inside new row column */}
                <div className="row gap-2 d-flex  p-4 " style={{ height: '75vh', overflowX: 'auto' }} >

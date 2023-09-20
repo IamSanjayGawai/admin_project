@@ -9,7 +9,7 @@ function TransactionContainer() {
                         {/* Card */}
                          
 
-                      <h1>Transactions</h1>
+                        <h2>Transactions</h2>
 
 
                      </div>

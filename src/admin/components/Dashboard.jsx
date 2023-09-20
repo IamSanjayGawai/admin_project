@@ -5,6 +5,7 @@ import TransactionContainer from "../Containers/TransactionContainer";
 import HomeDashboard from "../Containers/HomeDashboard";
 
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 function Dashboard() {
 
@@ -50,26 +51,7 @@ function Dashboard() {
             </div>
             {/* right main column */}
             <div className="col  py-2">
-               <nav class="navbar navbar-light bg-light box-shadow">
-                  <div class="container-fluid">
-                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                     </form>
-
-                     {/* Profile dropdown toggler start */}
-                     <div class="dropdown nav-item ms-auto">
-                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle me-1" height="30" alt="" loading="lazy" />
-                        <a class="dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                           <a class="dropdown-item" href="#">Profile</a>
-                           <a class="dropdown-item" href="#">Setting</a>
-                           <a class="dropdown-item" href="#">Logout</a>
-                        </div>
-                     </div>
-                     {/* Profile dropdown toggler end */}
-                  </div>
-               </nav>
+            <Navbar/>
 
 
                {/* row inside main column */}
